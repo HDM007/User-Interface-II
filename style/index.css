@@ -1,1 +1,203 @@
 /* Add CSS styling here */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS RESET ENDS, PROJECT BEGINS */
+
+
+html{
+  font-size: 62.5%;
+}
+
+
+/* Header begins here */
+
+
+.header{
+  background-color: mistyrose;
+  padding-bottom: 2rem;
+  border: 2px solid goldenrod;
+  padding-left: 2rem;
+}
+
+.header h1{
+  font-weight: bold;
+  margin: 2rem;
+  font-size: 4rem;
+}
+
+.flexbox{
+  display: flex;
+  border: 1px solid black;
+  width: 40%;
+  margin-left: 5%;
+}
+
+.flexbox .flexitem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 100%; 
+  border: 1px solid black;
+  height: 3rem;
+  text-decoration: none;
+  color: black;
+}
+
+.flexbox .flexitem:hover{
+  color: white;
+}
+
+.flexbox .flexitem:hover{
+  background-color: black;
+}
+
+.flexbox .flexitem a:hover{
+  color: white;
+}
+
+/* HEADER ENDS HERE */
+
+/* Body style starts here */
+
+.hero-container{
+  display: flex;
+  width: 100%;
+}
+
+.hero-container img{
+  width: 40%;
+  margin: 1rem;
+  border: 2px solid black;
+}
+
+.hero-child{
+  display: flex;
+  flex-flow: column wrap;
+  width: 50%;
+  margin: 1rem;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0rem 1rem;
+}
+
+.hero-child h3{
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 2rem 0rem;
+}
+
+.hero-child button{
+  margin: 1rem 0rem;
+  padding: 1rem 8rem;
+  font-size: 1.5rem;
+}
+
+.hero-child button a{
+  text-decoration: none;
+}
+
+button{
+  background-color: white;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+.hero-child p{
+  margin: 2rem 0rem;
+  font-size:2rem;
+}
+
+/* HERO CONTAINER STYLING ENDS HERE */
+
+.image-gallery{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.image-gallery .gallery-item{
+  width: 20%;
+  margin: 3rem 1.5rem;
+}
+
+.gallery-item img{
+  width: 100%;
+}
+
+/* Image gallery styling ends here */
+
+/* Footer styling starts here */
+
+.footer{
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: mistyrose;
+  align-items: center;
+  padding: 5rem 4rem;
+}
+
+.footer h3{
+  font-size: 3rem;
+}
+
+.footer button{
+  font-size: 2rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.footer button a{
+  text-decoration: none;
+}
