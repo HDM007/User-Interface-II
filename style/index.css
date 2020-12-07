@@ -50,7 +50,10 @@ table {
 }
 
 /* CSS RESET ENDS, PROJECT BEGINS */
-
+*{
+  box-sizing: border-box;
+  max-width: 100%;
+}
 
 html{
   font-size: 62.5%;
