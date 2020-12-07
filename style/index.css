@@ -280,5 +280,19 @@ button:hover{
 }
 
 @media(max-width:800px){
-  
+  .hero-image{
+    border: 1px solid black;
+  }
+
+  .hero-child{
+    border: 1px solid black;
+  }
+  .hero-child h3{
+    font-size: 2rem;
+  }
+
+  .hero-child p{
+    font-size: 1.5rem;
+  }
+
 }
