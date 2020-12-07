@@ -62,20 +62,18 @@ html{
 
 .header{
   background-color: mistyrose;
-  padding-bottom: 2rem;
+  padding-bottom: 2%;
   border: 2px solid goldenrod;
-  padding-left: 2rem;
 }
 
 .header h1{
   font-weight: bold;
-  margin: 2rem;
+  margin: 2%;
   font-size: 4rem;
 }
 
 .flexbox{
   display: flex;
-  border: 1px solid black;
   width: 40%;
   margin-left: 5%;
 }
@@ -111,12 +109,21 @@ html{
 .hero-container{
   display: flex;
   width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2% 0;
 }
 
-.hero-container img{
-  width: 40%;
-  margin: 1rem;
-  border: 2px solid black;
+.hero-image{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.hero-image img{
+  width: 80%;
+  border-radius: 10px;
 }
 
 .hero-child{
@@ -137,7 +144,7 @@ html{
 
 .hero-child button{
   margin: 1rem 0rem;
-  padding: 1rem 8rem;
+  padding: 1rem 6rem;
   font-size: 1.5rem;
 }
 
@@ -147,6 +154,7 @@ html{
 
 button{
   background-color: white;
+  text-decoration: none;
 }
 
 button:hover{
@@ -169,7 +177,7 @@ button:hover{
 
 .image-gallery .gallery-item{
   width: 20%;
-  margin: 3rem 1.5rem;
+  margin: 2% 2%;
 }
 
 .gallery-item img{
@@ -200,4 +208,77 @@ button:hover{
 
 .footer button a{
   text-decoration: none;
+}
+
+@media(max-width: 500px){
+  body{
+    /*background-color: red;*/
+  }
+
+  /* Styling for nav */
+
+  .header{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .header h1{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2% 0;
+    margin: 1% 1%;
+  }
+
+  .header .flexbox{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 4% 0;
+    margin: 0 auto;
+  }
+
+    /* Styling for main container */
+
+  .hero-container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid black;*/
+    text-align: center;
+  }
+  .hero-image{
+    /*border: 1px solid yellow;*/
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-container button{
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
+  .hero-child{
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    margin: 1rem;
+    align-items: center;
+    padding: 0rem 1rem;
+  }
+
+  /* Styling for image gallery */
+
+  .image-gallery .gallery-item{
+    width: 46%;
+    margin: 2% 2%;
+  }
+
+}
+
+@media(max-width:800px){
+  
 }
