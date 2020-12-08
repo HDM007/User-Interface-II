@@ -250,9 +250,6 @@ button:hover{
 
 
 @media(max-width: 500px){
-  body{
-    /*background-color: red;*/
-  }
 
   /* Styling for nav */
 
@@ -321,6 +318,10 @@ button:hover{
     margin: 1rem;
     align-items: center;
     padding: 0rem 1rem;
+  }
+
+  .hero-child h3{
+    font-size: 2rem;
   }
 
   /* Styling for image gallery */
