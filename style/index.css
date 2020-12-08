@@ -126,6 +126,7 @@ html{
   justify-content: space-around;
   align-items: center;
   margin: 0% 0;
+  background-color: mistyrose;
 }
 
 .hero-image{
@@ -153,10 +154,11 @@ html{
 
 .hero-child h3{
   font-weight: bold;
-  font-size: 3rem;
   margin: 2rem 0rem;
   color: black;
   text-shadow: 2px 2px white;
+  font-family: "East Sea Dokdo", cursive;
+  font-size: 3rem;
 }
 
 .hero-child button{
@@ -195,6 +197,7 @@ button:hover{
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
+  background-color: darkgrey;
 
 }
 
@@ -206,6 +209,7 @@ button:hover{
 .gallery-item img{
   width: 100%;
   border-radius: 50%;
+  border: 2px dashed white;
 }
 
 /* Image gallery styling ends here */
