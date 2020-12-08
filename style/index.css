@@ -311,6 +311,10 @@ button:hover{
     font-size: 1rem;
   }
 
+  .hero-container .hero-child h3{
+    font-size: 3rem;
+  }
+
   .hero-child{
     display: flex;
     flex-flow: column wrap;
@@ -319,7 +323,6 @@ button:hover{
     align-items: center;
     padding: 0rem 1rem;
   }
-
   .hero-child h3{
     font-size: 2rem;
   }
@@ -333,7 +336,7 @@ button:hover{
 
 }
 
-@media(max-width:800px){
+@media(max-width:984px){
 
   .hero-child h3{
     font-size: 2rem;
@@ -341,6 +344,10 @@ button:hover{
 
   .hero-child p{
     font-size: 1.5rem;
+  }
+
+  .hero-container .hero-child h3{
+    font-size: 2.5rem;
   }
 
 }
