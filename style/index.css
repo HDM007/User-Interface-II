@@ -134,7 +134,8 @@ html{
   display: flex;
   justify-content: center;
   align-content: center;
-  padding-top: 4%;
+  padding-top: 2%;
+  margin: 2% 1%;
 }
 
 .hero-image img{
@@ -156,9 +157,9 @@ html{
   font-weight: bold;
   margin: 2rem 0rem;
   color: black;
+  font-size: 3rem;
   text-shadow: 2px 2px white;
   font-family: "East Sea Dokdo", cursive;
-  font-size: 3rem;
 }
 
 .hero-child button{
@@ -339,6 +340,39 @@ button:hover{
 
   .hero-child p{
     font-size: 1.5rem;
+  }
+
+}
+
+@media(max-width: 1500px) {
+  .header h1{
+    padding-top: 2%;
+    font-size: 5rem;
+  }
+
+  .header .flexbox{
+    justify-content: flex-start;
+  }
+
+  .header .flexbox a{
+    font-size: 3rem;
+  }
+
+  .hero-child{
+    align-items: center;
+  }
+
+  .hero-child button{
+    opacity: 0.5;
+    padding: 2% 4%;
+  }
+
+  .hero-child button a{
+    font-size: 2rem;
+  }
+
+  .hero-child h3{
+    font-size: 5rem;
   }
 
 }
