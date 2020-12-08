@@ -1,4 +1,6 @@
 /* Add CSS styling here */
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+/* font-family: 'East Sea Dokdo', cursive; */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -64,13 +66,17 @@ html{
 
 
 .header{
+  background-image: url('starry-night-trees.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
   background-color: mistyrose;
   padding-bottom: 2%;
-  border: 2px solid goldenrod;
+  /*border: 2px solid goldenrod;*/
 }
 
 .header h1{
-  font-weight: bold;
+  font-family: "East Sea Dokdo", cursive;
   margin: 2%;
   font-size: 4rem;
 }
@@ -78,19 +84,18 @@ html{
 .flexbox{
   display: flex;
   width: 40%;
-  margin-left: 5%;
+  margin-left: 2%;
 }
 
 .flexbox .flexitem{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white;
   width: 100%; 
   border: 1px solid black;
   height: 3rem;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .flexbox .flexitem:hover{
@@ -148,16 +153,20 @@ html{
 .hero-child button{
   margin: 1rem 0rem;
   padding: 1rem 6rem;
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
 .hero-child button a{
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
 button{
   background-color: white;
   text-decoration: none;
+  font-family: "East Sea Dokdo", cursive;
+  margin: 2%;
+  font-size: 4rem;
 }
 
 button:hover{
@@ -197,6 +206,15 @@ button:hover{
   background-color: mistyrose;
   align-items: center;
   padding: 5rem 4rem;
+  background-image: url('starry-night-trees.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: mistyrose;
+  font-family: "East Sea Dokdo", cursive;
+  margin: 2%;
+  font-size: 4rem;
+  color: white;
 }
 
 .footer h3{
@@ -207,6 +225,7 @@ button:hover{
   font-size: 2rem;
   padding: 1.5rem;
   margin-top: 2rem;
+  opacity: 0.5;
 }
 
 .footer button a{
@@ -225,14 +244,15 @@ button:hover{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-
   }
 
   .header h1{
-    font-size: 2.5rem;
+    font-size: 4rem;
     text-align: center;
-    padding: 2% 0;
+    padding: 1% 0;
     margin: 1% 1%;
+    opacity: 0.5;
+    color: yellow;
   }
 
   .header .flexbox{
@@ -240,7 +260,16 @@ button:hover{
     flex-flow: column;
     justify-content: space-between;
     padding: 4% 0;
-    margin: 0 auto;
+  }
+
+  .header .flexbox a{
+    margin: 2% 2%;
+    font-family: "East Sea Dokdo", cursive;
+    font-size: 1.8rem;
+  }
+
+  .flexbox .flexitem {
+    border: none;
   }
 
     /* Styling for main container */
